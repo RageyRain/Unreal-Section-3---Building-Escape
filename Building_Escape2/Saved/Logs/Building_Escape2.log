@@ -1,0 +1,234 @@
+﻿Log file open, 02/21/18 13:36:22
+LogInit:Display: Running engine for game: Building_Escape2
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1438448239) SRandInit(1438448240).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.095441
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.16-CL-3561208
+LogInit: Engine Version: 4.16.3-3561208+++UE4+Release-4.16
+LogInit: Compatible Engine Version: 4.16.0-3452394+++UE4+Release-4.16
+LogInit: Net CL: 3452394
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 9
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 17
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 23
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 15
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 3
+LogInit: Compiled (64-bit): Jul 28 2017 11:49:47
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.16
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2018.02.21-13.36.23:509][  0]LogInit: Selected Device Profile: [Windows]
+[2018.02.21-13.36.23:509][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.02.21-13.36.23:519][  0]LogInit: Computer: VALTA
+[2018.02.21-13.36.23:519][  0]LogInit: User: Ozan
+[2018.02.21-13.36.23:519][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.02.21-13.36.23:519][  0]LogInit: High frequency timer resolution =3.421335 MHz
+[2018.02.21-13.36.23:520][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2018.02.21-13.36.23:520][  0]LogMemory: Platform Memory Stats for Windows
+[2018.02.21-13.36.23:520][  0]LogMemory: Process Physical Memory: 273.73 MB used, 273.73 MB peak
+[2018.02.21-13.36.23:520][  0]LogMemory: Process Virtual Memory: 262.84 MB used, 262.84 MB peak
+[2018.02.21-13.36.23:520][  0]LogMemory: Physical Memory: 10865.89 MB used,  5478.47 MB free, 16344.36 MB total
+[2018.02.21-13.36.23:520][  0]LogMemory: Virtual Memory: 673.88 MB used,  5478.47 MB free, 134217728.00 MB total
+[2018.02.21-13.36.23:656][  0]LogInit: Using OS detected language (en-GB).
+[2018.02.21-13.36.23:656][  0]LogInit: Using OS detected locale (en-GB).
+[2018.02.21-13.36.23:661][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2018.02.21-13.36.24:825][  0]LogD3D11RHI: D3D11 adapters:
+[2018.02.21-13.36.24:872][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 780' (Feature Level 11_0)
+[2018.02.21-13.36.24:872][  0]LogD3D11RHI:       3039/0/8172 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2018.02.21-13.36.24:874][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2018.02.21-13.36.24:874][  0]LogD3D11RHI:       0/0/8172 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2018.02.21-13.36.24:874][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.02.21-13.36.24:919][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.02.21-13.36.24:919][  0]LogD3D11RHI:     GPU DeviceId: 0x1004 (for the marketing name, search the web for "GPU Device Id")
+[2018.02.21-13.36.24:919][  0]LogWindows: EnumDisplayDevices:
+[2018.02.21-13.36.24:919][  0]LogWindows:    0. 'NVIDIA GeForce GTX 780' (P:1 D:1)
+[2018.02.21-13.36.24:919][  0]LogWindows:    1. 'NVIDIA GeForce GTX 780' (P:0 D:1)
+[2018.02.21-13.36.24:919][  0]LogWindows:    2. 'NVIDIA GeForce GTX 780' (P:0 D:0)
+[2018.02.21-13.36.24:920][  0]LogWindows:    3. 'NVIDIA GeForce GTX 780' (P:0 D:0)
+[2018.02.21-13.36.24:920][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2018.02.21-13.36.24:920][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 780
+[2018.02.21-13.36.24:920][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2018.02.21-13.36.24:920][  0]LogD3D11RHI:      Driver Date: Unknown
+[2018.02.21-13.36.24:920][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2018.02.21-13.36.24:943][  0]LogD3D11RHI: Async texture creation enabled
+[2018.02.21-13.36.24:961][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2018.02.21-13.36.25:011][  0]LogShaderCompilers: Guid format shader working directory is -68 characters bigger than the processId version (E:/Documents/Developer Projects/Repositories/Unreal Section 3(4) - Building Escape Development/Building_Escape2/Intermediate/Shaders/WorkingDirectory/404600/).
+[2018.02.21-13.36.25:011][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Ozan/AppData/Local/Temp/UnrealShaderWorkingDir/BB3F89F3472303864B6A09B4B49EE38A/'.
+[2018.02.21-13.36.25:011][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2018.02.21-13.36.26:229][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2018.02.21-13.36.26:295][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2018.02.21-13.36.26:363][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2018.02.21-13.36.26:437][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2018.02.21-13.36.26:507][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2018.02.21-13.36.26:573][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2018.02.21-13.36.26:641][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.02.21-13.36.26:715][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2018.02.21-13.36.26:786][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2018.02.21-13.36.26:847][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2018.02.21-13.36.26:913][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2018.02.21-13.36.26:980][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2018.02.21-13.36.27:048][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2018.02.21-13.36.27:112][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2018.02.21-13.36.27:176][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2018.02.21-13.36.27:300][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2018.02.21-13.36.27:300][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2018.02.21-13.36.27:357][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2018.02.21-13.36.27:478][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2018.02.21-13.36.27:516][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2018.02.21-13.36.27:584][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2018.02.21-13.36.27:651][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.02.21-13.36.27:726][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2018.02.21-13.36.27:794][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2018.02.21-13.36.27:794][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2018.02.21-13.36.28:456][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2018.02.21-13.36.28:538][  0]LogDerivedDataCache: Loaded boot cache 0.08s 90MB C:/Users/Ozan/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2018.02.21-13.36.28:539][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Ozan/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2018.02.21-13.36.28:539][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file E:/Documents/Developer Projects/Repositories/Unreal Section 3(4) - Building Escape Development/Building_Escape2/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.02.21-13.36.28:539][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.02.21-13.36.28:539][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file E:/Documents/Developer Projects/Repositories/Unreal Section 3(4) - Building Escape Development/Building_Escape2/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.02.21-13.36.28:539][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.02.21-13.36.28:557][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.02.21-13.36.28:569][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Ozan/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.02.21-13.36.28:579][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.02.21-13.36.28:579][  0]LogSlate: Using Freetype 2.6.0
+[2018.02.21-13.36.28:581][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.02.21-13.36.28:581][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.02.21-13.36.29:161][  0]LogInit: Selected Device Profile: [Windows]
+[2018.02.21-13.36.29:240][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2018.02.21-13.36.29:445][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.02.21-13.36.29:507][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.02.21-13.36.29:577][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.02.21-13.36.29:577][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2018.02.21-13.36.29:577][  0]LogMeshUtilities: No automatic mesh merging module available
+[2018.02.21-13.36.30:240][  0]LogNetVersion: Building_Escape2 , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 2348500920)
+[2018.02.21-13.36.30:313][  0]LogAssetRegistry: FAssetRegistry took 0.0266 seconds to start up
+[2018.02.21-13.36.30:376][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.035646 seconds
+[2018.02.21-13.36.30:381][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2018.02.21-13.36.30:381][  0]LogUObjectAllocator: 7260424 out of 0 bytes used by permanent object pool.
+[2018.02.21-13.36.30:381][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.02.21-13.36.30:463][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2018.02.21-13.36.34:314][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.02.21-13.36.34:370][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.02.21-13.36.35:196][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2018.02.21-13.36.35:750][  0]SourceControl: Info Source control is disabled
+[2018.02.21-13.36.35:805][  0]SourceControl: Info Source control is disabled
+[2018.02.21-13.36.35:875][  0]SourceControl: Info Source control is disabled
+[2018.02.21-13.36.35:943][  0]SourceControl: Info Source control is disabled
+[2018.02.21-13.36.36:987][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.02.21-13.36.37:866][  0]LogEngine: Initializing Engine...
+[2018.02.21-13.36.37:866][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.02.21-13.36.38:065][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.02.21-13.36.38:065][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.02.21-13.36.38:240][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.02.21-13.36.38:253][  0]LogInit: XAudio2 using 'Speakers (ASUS Xonar Xense Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.02.21-13.36.38:264][  0]LogInit: FAudioDevice initialized.
+[2018.02.21-13.36.38:310][  0]LogDerivedDataCache: Saved boot cache 0.05s 90MB C:/Users/Ozan/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2018.02.21-13.36.38:316][  0]LogInit: Texture streaming: Enabled
+[2018.02.21-13.36.38:435][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.02.21-13.36.38:787][  0]LogInit: Transaction tracking system initialized
+[2018.02.21-13.36.39:202][  0]BlueprintLog: New page: Editor Load
+[2018.02.21-13.36.40:629][  0]LocalizationService: Info Localization service is disabled
+[2018.02.21-13.36.41:655][  0]LogConsoleResponse:Display: 
+[2018.02.21-13.36.41:840][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.02.21-13.36.41:840][  0]LogCook:Display: Mobile HDR setting 1
+[2018.02.21-13.36.43:180][  0]LogFileCache: Scanning file cache for directory 'E:/Documents/Developer Projects/Repositories/Unreal Section 3(4) - Building Escape Development/Building_Escape2/Content/' took 0.01s
+[2018.02.21-13.36.43:239][  0]SourceControl: Info Source control is disabled
+[2018.02.21-13.36.43:240][  0]Cmd: MAP LOAD FILE="E:/Documents/Developer Projects/Repositories/Unreal Section 3(4) - Building Escape Development/Building_Escape2/Content/NewMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.02.21-13.36.43:240][  0]LightingResults: New page: Lighting Build
+[2018.02.21-13.36.43:295][  0]MapCheck: New page: Map Check
+[2018.02.21-13.36.43:295][  0]LightingResults: New page: Lighting Build
+[2018.02.21-13.36.43:906][  0]LogMaterial: Missing cached shader map for material M_custom_Wood_Floor_Walnut_Worn, compiling. 
+[2018.02.21-13.36.43:960][  0]LogMaterial: Missing cached shader map for material M_custom_Concrete_Panels1, compiling. 
+[2018.02.21-13.36.43:984][  0]LogMaterial: Missing cached shader map for material M_custom_Basic_Wall1, compiling. 
+[2018.02.21-13.36.44:046][  0]LogTexture:Display: Building textures: HQ_Lightmap0_3 (AutoDXT, 1024X1024)
+[2018.02.21-13.36.44:414][  0]LogTexture:Display: Building textures: HQ_Lightmap0_4 (AutoDXT, 512X512)
+[2018.02.21-13.36.44:486][  0]LogTexture:Display: Building textures: HQ_Lightmap1_1 (AutoDXT, 1024X1024)
+[2018.02.21-13.36.44:808][  0]LogTexture:Display: Building textures: HQ_Lightmap1_2 (AutoDXT, 1024X1024)
+[2018.02.21-13.36.45:096][  0]LogTexture:Display: Building textures: HQ_Lightmap1_5 (AutoDXT, 64X64)
+[2018.02.21-13.36.45:120][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_3 (DXT1, 1024X1024)
+[2018.02.21-13.36.45:337][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_4 (DXT1, 512X512)
+[2018.02.21-13.36.45:383][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_1 (DXT1, 1024X1024)
+[2018.02.21-13.36.45:500][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_2 (DXT1, 1024X1024)
+[2018.02.21-13.36.45:638][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_5 (DXT1, 64X64)
+[2018.02.21-13.36.45:655][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_30 (BGRA8, 1024X1024)
+[2018.02.21-13.36.45:725][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_31 (BGRA8, 1024X512)
+[2018.02.21-13.36.45:764][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_32 (G8, 32X32)
+[2018.02.21-13.36.45:799][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave door-lock...
+[2018.02.21-13.36.45:860][  0]LogAIModule: Creating AISystem for world NewMap
+[2018.02.21-13.36.45:897][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.02.21-13.36.45:920][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.02.21-13.36.46:084][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 163.987ms to complete.
+[2018.02.21-13.36.46:084][  0]LogFileHelpers: Loading map 'NewMap' took 2.845
+[2018.02.21-13.36.46:171][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2018.02.21-13.36.46:171][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2018.02.21-13.36.46:333][  0]LogCollectionManager: Loaded 0 collections in 0.002415 seconds
+[2018.02.21-13.36.46:477][  0]LogFileCache: Scanning file cache for directory 'E:/Documents/Developer Projects/Repositories/Unreal Section 3(4) - Building Escape Development/Building_Escape2/Saved/Collections/' took 0.01s
+[2018.02.21-13.36.46:477][  0]LogFileCache: Scanning file cache for directory 'E:/Documents/Developer Projects/Repositories/Unreal Section 3(4) - Building Escape Development/Building_Escape2/Content/Developers/Ozan/Collections/' took 0.01s
+[2018.02.21-13.36.46:477][  0]LogFileCache: Scanning file cache for directory 'E:/Documents/Developer Projects/Repositories/Unreal Section 3(4) - Building Escape Development/Building_Escape2/Content/Collections/' took 0.01s
+[2018.02.21-13.36.46:477][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2018.02.21-13.36.46:498][  0]LogContentBrowser: Native class hierarchy populated in 0.0209 seconds. Added 2333 classes and 493 folders.
+[2018.02.21-13.36.46:653][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0039 seconds. Added 0 classes and 0 folders.
+[2018.02.21-13.36.46:844][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0035 seconds. Added 0 classes and 0 folders.
+[2018.02.21-13.36.46:953][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0050 seconds. Added 1 classes and 2 folders.
+[2018.02.21-13.36.47:061][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2018.02.21-13.36.48:447][  0]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2018.02.21-13.36.48:488][  0]LogSlate: Took 0.000640 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.02.21-13.36.48:496][  0]LogSlate: Took 0.003032 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.02.21-13.36.48:507][  0]LogSlate: Took 0.003660 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.02.21-13.36.48:698][  0]LogTemp: Executing iPhonePackager certificates Engine -bundlename com.YourCompany.BuildingEscape2
+[2018.02.21-13.36.48:698][  0]LogTemp: CWD: C:\Program Files\Epic Games\UE_4.16\Engine\Binaries\DotNET\IOS
+[2018.02.21-13.36.48:698][  0]LogTemp: Initial Dir: C:\Program Files\Epic Games\UE_4.16
+[2018.02.21-13.36.48:698][  0]LogTemp: Env CWD: C:\Program Files\Epic Games\UE_4.16\Engine\Binaries\DotNET\IOS
+[2018.02.21-13.36.48:698][  0]LogTemp: BranchPath = VALTA/C/Program Files/Epic Games/UE_4.16/Engine/Binaries --- GameBranchPath = VALTA/C/Program Files/Epic Games/UE_4.16/Engine/Binaries
+[2018.02.21-13.36.48:698][  0]LogTemp: IPP ERROR: Could not find provision directory 'C:\Users\Ozan\AppData\Local/Apple Computer/MobileDevice/Provisioning Profiles/'.
+[2018.02.21-13.36.48:698][  0]LogRenderer: Reallocating scene render targets to support 1668x896 NumSamples 1 (Frame:1).
+[2018.02.21-13.36.48:937][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2018.02.21-13.36.49:069][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0053 seconds. Added 1 classes and 2 folders.
+[2018.02.21-13.36.49:070][  0]LogLoad: (Engine Initialization) Total time: 28.00 seconds
+[2018.02.21-13.36.49:070][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.13 seconds
+[2018.02.21-13.36.49:070][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2018.02.21-13.36.49:070][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2018.02.21-13.36.49:085][  0]LogOcInput: OculusInput pre-init called
+[2018.02.21-13.36.49:085][  0]LogHMD: Starting GearVRController plugin
+[2018.02.21-13.36.49:108][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.02.21-13.36.49:188][  1]LogAssetRegistry: Asset discovery search completed in 18.8978 seconds
+[2018.02.21-13.36.49:192][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2018.02.21-13.36.49:192][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000127 seconds (updated 0 objects)
+[2018.02.21-13.37.25:689][ 56]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2018.02.21-13.37.26:452][ 56]LogAIModule: Creating AISystem for world Advanced_Lighting
+[2018.02.21-13.37.26:559][ 56]LogAIModule: Creating AISystem for world Minimal_Default
+[2018.02.21-13.37.27:742][ 56]LogAIModule: Creating AISystem for world StarterMap
+[2018.02.21-13.37.53:038][ 56]LogSlate: Took 0.000502 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)

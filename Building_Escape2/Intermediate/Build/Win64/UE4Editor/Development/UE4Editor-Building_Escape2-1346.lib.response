@@ -1,0 +1,18 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Building_Escape2-1346.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Program Files\Epic Games\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.obj"
+"E:\Documents\Developer Projects\Repositories\Unreal Section 3 - Building Escape\Building_Escape2\Intermediate\Build\Win64\UE4Editor\Development\Building_Escape2\Building_Escape2.cpp.obj"
+"E:\Documents\Developer Projects\Repositories\Unreal Section 3 - Building Escape\Building_Escape2\Intermediate\Build\Win64\UE4Editor\Development\Building_Escape2\Building_Escape2GameModeBase.cpp.obj"
+"E:\Documents\Developer Projects\Repositories\Unreal Section 3 - Building Escape\Building_Escape2\Intermediate\Build\Win64\UE4Editor\Development\Building_Escape2\Grabber.cpp.obj"
+"E:\Documents\Developer Projects\Repositories\Unreal Section 3 - Building Escape\Building_Escape2\Intermediate\Build\Win64\UE4Editor\Development\Building_Escape2\OpenDoor.cpp.obj"
+"E:\Documents\Developer Projects\Repositories\Unreal Section 3 - Building Escape\Building_Escape2\Intermediate\Build\Win64\UE4Editor\Development\Building_Escape2\PositionReport.cpp.obj"
+"E:\Documents\Developer Projects\Repositories\Unreal Section 3 - Building Escape\Building_Escape2\Intermediate\Build\Win64\UE4Editor\Development\Building_Escape2\Building_Escape2.generated.cpp.obj"
+"C:\Program Files\Epic Games\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\Building_Escape2\PCLaunch.rc.res"
+"C:\Program Files\Epic Games\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\ModuleVersionResource.rc.inl.res"
+/OUT:"E:\Documents\Developer Projects\Repositories\Unreal Section 3 - Building Escape\Building_Escape2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Building_Escape2-1346.lib"
