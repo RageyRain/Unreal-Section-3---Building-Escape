@@ -38,16 +38,16 @@ void URaiseStairs::TickComponent(float DeltaTime, ELevelTick TickType, FActorCom
 
 	//Check the trigger volume for the mass of overlapping actors every frame
 	/// TODO create Raising stairs BP
-	/* 
+	 
 	if (GetTotalMassOfActorsOnPlate() > StairsKeyWeight)
 	{
-		OnOpen.Broadcast();
+		OnRaise.Broadcast();
 	}
 	else
 	{
-		OnClose.Broadcast();
+		OnLower.Broadcast();
 	}
-	*/
+	
 }
 
 float URaiseStairs::GetTotalMassOfActorsOnPlate()
