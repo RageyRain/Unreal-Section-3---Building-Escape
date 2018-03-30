@@ -13,23 +13,25 @@ UCannonController::UCannonController()
 }
 
 
+
 // Called when the game starts
 void UCannonController::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// ...
-	
+	SetupInputComponent();
+
 }
+
 
 
 // Called every frame
 void UCannonController::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-
-	// ...
+	
 }
+
 
 
 
@@ -74,7 +76,65 @@ const FHitResult UCannonController::GetFirstCannonControlInReach()
 		FCollisionObjectQueryParams(ECollisionChannel::ECC_GameTraceChannel1), ///using custom trace channel "ControlComponent"
 		TraceParameters
 	);
+
+
 	///Return the first control component the trace detects along the reach line
 	return LineTraceHit;
 }
 
+
+
+
+//Handles interactions with Control Components
+///	//Finds and sets up attached Input component
+void UCannonController::SetupInputComponent()
+{
+	InputComponent = GetOwner()->FindComponentByClass<UInputComponent>();
+	if (InputComponent)
+	{
+
+		InputComponent->BindAction("InteractUp", IE_Axis, this, &UCannonController::InteractUp);
+		InputComponent->BindAction("InteractDown", IE_Axis, this, &UCannonController::InteractDown);
+
+	}
+	else
+	{
+		UE_LOG(LogTemp, Error, TEXT("Cannot find input component on %s"), *(GetOwner()->GetName()))
+	}
+
+}
+
+///Calls ray-cast and interacts with object in reach
+void UCannonController::InteractUp()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Interact Pressed"));
+
+	///
+	auto HitResult = GetFirstCannonControlInReach();
+	auto ComponentToInteract = HitResult.GetComponent();
+	auto ActorHit = HitResult.GetActor();
+
+	///
+	if (ActorHit)
+	{
+		auto HitResultStr = HitResult.ToString();
+		UE_LOG(LogTemp, Warning, TEXT("Detected: %s"), *HitResultStr);
+	}
+}
+
+void UCannonController::InteractDown()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Interact Pressed"));
+
+	///
+	auto HitResult = GetFirstCannonControlInReach();
+	auto ComponentToInteract = HitResult.GetComponent();
+	auto ActorHit = HitResult.GetActor();
+
+	///
+	if (ActorHit)
+	{
+		auto HitResultStr = HitResult.ToString();
+		UE_LOG(LogTemp, Warning, TEXT("Detected: %s"), *HitResultStr);
+	}
+}

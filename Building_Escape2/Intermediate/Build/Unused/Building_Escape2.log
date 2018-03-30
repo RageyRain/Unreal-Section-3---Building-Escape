@@ -1,4 +1,33 @@
 ﻿  Compiling game modules for hot reload
-  Target is up to date
-  Deploying Building_Escape2Editor Win64 Development...
-  Total build time: 7.04 seconds (NoActionsToExecute executor: 0.00 seconds)
+  Parsing headers for Building_Escape2Editor
+    Running UnrealHeaderTool "E:\Documents\Developer Projects\Repositories\Unreal Section 3(4) - Building Escape Development\Building_Escape2\Building_Escape2.uproject" "E:\Documents\Developer Projects\Repositories\Unreal Section 3(4) - Building Escape Development\Building_Escape2\Intermediate\Build\Win64\Building_Escape2Editor\Development\Building_Escape2Editor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for Building_Escape2Editor in 3.7152809 seconds
+  
+  Unhandled Exception: UnrealBuildTool.BuildException: ERROR: In E:\Documents\Developer Projects\Repositories\Unreal Section 3(4) - Building Escape Development\Building_Escape2\Source\Building_Escape2\CannonController.h: #include "Classes\Components\InputComponent.h" contains backslashes ('\'), please use forward slashes ('/') instead.
+     at UnrealBuildTool.CPPHeaders.CollectHeaders(FileReference ProjectFile, FileItem CPPFile, String FileToRead, String FileContents, String InstalledFolder, Int32 StartIndex, Int32 EndIndex)
+     at UnrealBuildTool.CPPHeaders.GetUncachedDirectIncludeDependencies(FileItem CPPFile, FileReference ProjectFile)
+     at UnrealBuildTool.CPPHeaders.GetDirectIncludeDependencies(FileItem CPPFile, Boolean bOnlyCachedDependencies)
+     at UnrealBuildTool.CPPHeaders.FindAndCacheAllIncludedFiles(FileItem CPPFile, CppIncludePaths IncludePaths, IncludedFilesSet& Result, Boolean bOnlyCachedDependencies)
+     at UnrealBuildTool.CPPHeaders.FindAndCacheAllIncludedFiles(FileItem CPPFile, CppIncludePaths IncludePaths, IncludedFilesSet& Result, Boolean bOnlyCachedDependencies)
+     at UnrealBuildTool.CPPHeaders.FindAndCacheAllIncludedFiles(FileItem SourceFile, CppIncludePaths IncludePaths, Boolean bOnlyCachedDependencies)
+     at UnrealBuildTool.UnrealBuildTool.<>c__DisplayClass50_0.<CreateThreadForCachingCPPIncludes>b__0()
+     at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+     at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+     at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+     at System.Threading.ThreadHelper.ThreadStart()
+  Performing 4 actions (4 in parallel)
+  CannonController.cpp
+  Building_Escape2.generated.cpp
+E:\Documents\Developer Projects\Repositories\Unreal Section 3(4) - Building Escape Development\Building_Escape2\Source\Building_Escape2\CannonController.cpp(92): error C2065: 'InputComponent': undeclared identifier
+E:\Documents\Developer Projects\Repositories\Unreal Section 3(4) - Building Escape Development\Building_Escape2\Source\Building_Escape2\CannonController.cpp(93): error C2065: 'InputComponent': undeclared identifier
+E:\Documents\Developer Projects\Repositories\Unreal Section 3(4) - Building Escape Development\Building_Escape2\Source\Building_Escape2\CannonController.cpp(96): error C2065: 'InputComponent': undeclared identifier
+E:\Documents\Developer Projects\Repositories\Unreal Section 3(4) - Building Escape Development\Building_Escape2\Source\Building_Escape2\CannonController.cpp(96): error C2227: left of '->BindAction' must point to class/struct/union/generic type
+  E:\Documents\Developer Projects\Repositories\Unreal Section 3(4) - Building Escape Development\Building_Escape2\Source\Building_Escape2\CannonController.cpp(96): note: type is 'unknown-type'
+E:\Documents\Developer Projects\Repositories\Unreal Section 3(4) - Building Escape Development\Building_Escape2\Source\Building_Escape2\CannonController.cpp(96): error C2653: 'UGrabber': is not a class or namespace name
+E:\Documents\Developer Projects\Repositories\Unreal Section 3(4) - Building Escape Development\Building_Escape2\Source\Building_Escape2\CannonController.cpp(96): error C2065: 'Grab': undeclared identifier
+E:\Documents\Developer Projects\Repositories\Unreal Section 3(4) - Building Escape Development\Building_Escape2\Source\Building_Escape2\CannonController.cpp(97): error C2065: 'InputComponent': undeclared identifier
+E:\Documents\Developer Projects\Repositories\Unreal Section 3(4) - Building Escape Development\Building_Escape2\Source\Building_Escape2\CannonController.cpp(97): error C2227: left of '->BindAction' must point to class/struct/union/generic type
+  E:\Documents\Developer Projects\Repositories\Unreal Section 3(4) - Building Escape Development\Building_Escape2\Source\Building_Escape2\CannonController.cpp(97): note: type is 'unknown-type'
+E:\Documents\Developer Projects\Repositories\Unreal Section 3(4) - Building Escape Development\Building_Escape2\Source\Building_Escape2\CannonController.cpp(97): error C2653: 'UGrabber': is not a class or namespace name
+E:\Documents\Developer Projects\Repositories\Unreal Section 3(4) - Building Escape Development\Building_Escape2\Source\Building_Escape2\CannonController.cpp(97): error C2065: 'Release': undeclared identifier
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.MakeFile.Targets(41,5): error MSB3073: The command ""C:\Program Files\Epic Games\UE_4.16\Engine\Build\BatchFiles\Build.bat" Building_Escape2Editor Win64 Development "E:\Documents\Developer Projects\Repositories\Unreal Section 3(4) - Building Escape Development\Building_Escape2\Building_Escape2.uproject" -waitmutex" exited with code -532462766.

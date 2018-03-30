@@ -96,7 +96,7 @@ void UGrabber::Grab()
 
 	auto GrabLocation = HitResult.ImpactPoint;
 
-	///If we hit something then attack a physics handle
+	///If we hit something then attach a physics handle
 	if (ActorHit) 
 	{
 		if (!PhysicsHandle) { return; }
