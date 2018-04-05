@@ -30,6 +30,7 @@ void UCannonController::TickComponent(float DeltaTime, ELevelTick TickType, FAct
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 	
+	GetFirstCannonControlInReach();
 }
 
 
@@ -73,11 +74,19 @@ const FHitResult UCannonController::GetFirstCannonControlInReach()
 		LineTraceHit,
 		GetReachLineStart(), ///using calculated value for start of trace
 		GetReachLineEnd(), ///using calculated alue for end of trace
-		FCollisionObjectQueryParams(ECollisionChannel::ECC_GameTraceChannel1), ///using custom trace channel "ControlComponent"
+		FCollisionObjectQueryParams(ECollisionChannel::ECC_GameTraceChannel2), ///using custom trace channel "ControlComponent"
 		TraceParameters
 	);
 
-
+	/*
+	auto ComponentHit = LineTraceHit.GetComponent();
+	if (ComponentHit)
+	{
+		auto ComponentHitStr = ComponentHit->GetReadableName();
+		UE_LOG(LogTemp, Warning, TEXT("Detected: %s"), ComponentHitStr;
+	}
+	*/
+	
 	///Return the first control component the trace detects along the reach line
 	return LineTraceHit;
 }
@@ -89,32 +98,39 @@ const FHitResult UCannonController::GetFirstCannonControlInReach()
 ///	//Finds and sets up attached Input component
 void UCannonController::SetupInputComponent()
 {
+	///Finds the InputComponent of the owner of this function
 	InputComponent = GetOwner()->FindComponentByClass<UInputComponent>();
+	///If an InputComponent is found then action events are setup
 	if (InputComponent)
 	{
-
-		InputComponent->BindAction("InteractUp", IE_Axis, this, &UCannonController::InteractUp);
-		InputComponent->BindAction("InteractDown", IE_Axis, this, &UCannonController::InteractDown);
-
+		///Input for E key
+		InputComponent->BindAction("InteractUp", IE_Pressed, this, &UCannonController::InteractUp);
+		///Input for Q key
+		InputComponent->BindAction("InteractDown", IE_Pressed, this, &UCannonController::InteractDown);
 	}
+	///If no InputComponent is found then error is logged
 	else
 	{
 		UE_LOG(LogTemp, Error, TEXT("Cannot find input component on %s"), *(GetOwner()->GetName()))
 	}
-
 }
 
-///Calls ray-cast and interacts with object in reach
+///Calls ray-cast and interacts with object in reach when E is pressed
 void UCannonController::InteractUp()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Interact Pressed"));
+	///Logs when key pressed
+	UE_LOG(LogTemp, Warning, TEXT("InteractUp Pressed"));
 
-	///
+	///Takes output of other function and places in container
 	auto HitResult = GetFirstCannonControlInReach();
+	///Uses container to determine interacted component
 	auto ComponentToInteract = HitResult.GetComponent();
+	///Uses container to determine the owning Actor of the hit result
 	auto ActorHit = HitResult.GetActor();
+	///Uses container to determine the component that retruns a hit result
+	auto ComponentHit = HitResult.GetComponent();
 
-	///
+	///If there is a HitResult on an actor then the operations are carried out
 	if (ActorHit)
 	{
 		auto HitResultStr = HitResult.ToString();
@@ -122,16 +138,22 @@ void UCannonController::InteractUp()
 	}
 }
 
+///Calls ray-cast and interacts with object in reach when Q is pressed
 void UCannonController::InteractDown()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Interact Pressed"));
+	///Logs when key pressed
+	UE_LOG(LogTemp, Warning, TEXT("InteractDown Pressed"));
 
-	///
+	///Uses container to determine interacted component
 	auto HitResult = GetFirstCannonControlInReach();
+	///Uses container to determine interacted component
 	auto ComponentToInteract = HitResult.GetComponent();
+	///Uses container to determine the owning Actor of the hit result
 	auto ActorHit = HitResult.GetActor();
+	///Uses container to determine the component that retruns a hit result
+	auto ComponentHit = HitResult.GetComponent();
 
-	///
+	///If there is a HitResult on an actor then the operations are carried out
 	if (ActorHit)
 	{
 		auto HitResultStr = HitResult.ToString();

@@ -31,7 +31,7 @@ public:
 private:
 
 	UPROPERTY(VisibleAnywhere)
-	float ControlReach = 120.0f;
+	float ControlReach = 160.0f;
 	
 	class UInputComponent* InputComponent = nullptr;
 
