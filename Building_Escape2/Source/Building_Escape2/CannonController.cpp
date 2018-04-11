@@ -131,10 +131,13 @@ void UCannonController::InteractUp()
 	auto ComponentHit = HitResult.GetComponent();
 
 	///If there is a HitResult on an actor then the operations are carried out
-	if (ActorHit)
+	if (ComponentHit)
 	{
 		auto HitResultStr = HitResult.ToString();
 		UE_LOG(LogTemp, Warning, TEXT("Detected: %s"), *HitResultStr);
+		
+		OnInteractUp.Broadcast();
+	
 	}
 }
 
@@ -154,9 +157,12 @@ void UCannonController::InteractDown()
 	auto ComponentHit = HitResult.GetComponent();
 
 	///If there is a HitResult on an actor then the operations are carried out
-	if (ActorHit)
+	if (ComponentHit)
 	{
 		auto HitResultStr = HitResult.ToString();
 		UE_LOG(LogTemp, Warning, TEXT("Detected: %s"), *HitResultStr);
+
+		OnInteractDown.Broadcast();
+
 	}
 }

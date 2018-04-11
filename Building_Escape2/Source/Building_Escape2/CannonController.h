@@ -10,6 +10,7 @@
 #include "Classes/Components/InputComponent.h"
 #include "CannonController.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FCannonControlEvent);
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class BUILDING_ESCAPE2_API UCannonController : public UActorComponent
@@ -28,6 +29,13 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
+	UPROPERTY(BlueprintAssignable)
+	FCannonControlEvent OnInteractUp;
+
+	UPROPERTY(BlueprintAssignable)
+	FCannonControlEvent OnInteractDown;
+
+	
 private:
 
 	UPROPERTY(VisibleAnywhere)
