@@ -137,7 +137,7 @@ void UCannonController::InteractUp()
 		UE_LOG(LogTemp, Warning, TEXT("Detected: %s"), *HitResultStr);
 		
 		OnInteractUp.Broadcast();
-	
+		
 	}
 }
 

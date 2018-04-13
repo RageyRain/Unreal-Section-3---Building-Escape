@@ -29,10 +29,10 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-	UPROPERTY(BlueprintAssignable)
+	UPROPERTY(BlueprintCallable)
 	FCannonControlEvent OnInteractUp;
 
-	UPROPERTY(BlueprintAssignable)
+	UPROPERTY(BlueprintCallable)
 	FCannonControlEvent OnInteractDown;
 
 	
